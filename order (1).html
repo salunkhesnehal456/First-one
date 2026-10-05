@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Biryani</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .price {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #ff6600;
+        }
+
+        input {
+            width: 60px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .order-btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-btn:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Choose Your Biryani 🍛</h1>
+
+    <div class="container">
+
+        <!-- 1 -->
+        <div class="card">
+            <img src="https://www.sidechef.com/recipe/6df5d24c-24a1-417a-b317-f83d949447fc.jpg?d=1408x1120" alt="">
+            <h3>Chicken Biryani</h3>
+            <p class="price">₹200</p>
+            Quantity: <input type="number" min="0" value="0">
+        </div>
+
+        <!-- 2 -->
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/7dLE0oraTF0/maxresdefault.jpg" alt="">
+            <h3>Mutton Biryani</h3>
+            <p class="price">₹300</p>
+            Quantity: <input type="number" min="0" value="0">
+        </div>
+
+        <!-- 3 -->
+        <div class="card">
+            <img src="https://static.toiimg.com/thumb/53098310.cms?imgsize=579584&width=800&height=800" alt="">
+            <h3>Veg Biryani</h3>
+            <p class="price">₹150</p>
+            Quantity: <input type="number" min="0" value="0">
+        </div>
+
+        <!-- 4 -->
+        <div class="card">
+            <img src="https://vaya.in/recipes/wp-content/uploads/2019/01/Hyderabadi-Egg-Dum-Biryani.jpg" alt="">
+            <h3>Egg Biryani</h3>
+            <p class="price">₹180</p>
+            Quantity: <input type="number" min="0" value="0">
+        </div>
+
+        <!-- 5 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_olhKJrFyD4Xt1RxEtAOHqf7iNkUwPlYQhQ&" alt="">
+            <h3>hydrabadi Biryani</h3>
+            <p class="price">₹220</p>
+            Quantity: <input type="number" min="0" value="0">
+        </div>
+
+    </div>
+
+    <button class="order-btn" onclick="placeOrder()">Place Order</button>
+
+    <script>
+        function placeOrder() {
+            alert("Order placed! (You can connect this to WhatsApp next)");
+        }
+    </script>
+
+</body>
+</html>
